@@ -121,20 +121,21 @@ MENU STYLING
 	-o-user-select: none;
 	user-select: none;
 	float: right;
-	line-height: 2em;
-	margin-top: 0.5em;
-	background-color: $background-color;
-	border-radius: 4px;
-	padding: 0 0.5em;
-	color: $header-text-color;
+	line-height: 0;
+	margin-top: 0.8em;
+	background: none;
+	border: none;
+	padding: 0.4em;
 	text-decoration: none;
 	position: relative;
 	right: 2rem;
 	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
 
 	&:hover {
-		color: $header-text-color;
-		background-color: darken($background-color, 10%);
+		opacity: 0.8;
 	}
 }
 
