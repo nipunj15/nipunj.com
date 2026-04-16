@@ -1,0 +1,35 @@
+title: Nipun Jain
+description: "Founding engineer turned founder. Building at the intersection of manufacturing and AI."
+
+url: "https://nipunj.com"
+baseurl:
+permalink: blog/:title/
+
+sass:
+    style: compressed
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+
+navigation:
+    - title: About
+      url: /index.html
+    - title: Work
+      url: /work
+    - title: Projects
+      url: /projects
+    - title: Thesis
+      url: /thesis
+
+social:
+    github: nipunj15
+    twitter: nipunj15
+    email: hey@nipunj.com
+    linkedin: nipunj15
+
+exclude:
+    - brief.md
+    - README.md
+    - LICENSE
+    - Gemfile.lock

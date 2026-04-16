@@ -1,0 +1,59 @@
+/***************
+WORK TIMELINE
+***************/
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: $header-text-color;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -2.35rem;
+    top: 0.35rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $header-text-color;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-date {
+  font-family: $sans-serif;
+  font-weight: 300;
+  font-size: 0.85em;
+  color: lighten(black, 50%);
+  margin-bottom: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .timeline-date {
+    color: lighten(black, 70%);
+  }
+}
