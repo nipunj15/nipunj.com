@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-<div class="post">
+<div class="post is-reference">
   <h1 class="pageTitle">Projects</h1>
 
   <h2>Padel Tracker</h2>

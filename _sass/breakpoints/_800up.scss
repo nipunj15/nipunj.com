@@ -74,7 +74,7 @@ HEADER STYLING
 	h1 {
 		font-size: 3em;
 		line-height: 1;
-		letter-spacing: -3px;
+		letter-spacing: -1.5px; // softened from -3px (letters were nearly colliding)
 		padding-left: 0;
 	}
 
@@ -188,6 +188,35 @@ POST STYLING
 
 	.pageTitle {
 		margin: 2rem auto 1em;
+	}
+
+	// Reference-style pages (CV / project list) read better left-aligned on a wider measure.
+	// The block itself is centered to align visually with the header's centered title (800px).
+	&.is-reference {
+		max-width: 800px;
+		margin: 0 auto;
+
+		h1, h2, h3, h4, h5, h6,
+		p, ul, ol, dl,
+		.pageTitle {
+			width: 100%;
+			max-width: none;
+			margin-left: 0;
+			margin-right: 0;
+			text-align: left;
+		}
+
+		.pageTitle {
+			text-align: left;
+
+			&:after {
+				margin-left: 0;
+			}
+		}
+
+		.timeline {
+			margin-left: 0;
+		}
 	}
 
 	.featuredImage {
