@@ -59,9 +59,9 @@ HEADER STYLING
 ***************/
 
 .header {
-	height: 15em;
+	height: 11em;
 	position: relative;
-	padding-bottom: 2em;
+	padding-bottom: 1.5em;
 
 	.container {
 		position: relative;
@@ -72,9 +72,9 @@ HEADER STYLING
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 3.75em;
 		line-height: 1;
-		letter-spacing: -1.5px; // softened from -3px (letters were nearly colliding)
+		letter-spacing: -2px;
 		padding-left: 0;
 	}
 
@@ -94,7 +94,7 @@ HEADER STYLING
 
 				a {
 					color: $header-text-color;
-					font-size: .9em;
+					font-size: 1.05em;
 					text-decoration: none;
 					padding: 0 .25em;
 
@@ -207,15 +207,39 @@ POST STYLING
 		}
 
 		.pageTitle {
+			font-size: 2.5em;
 			text-align: left;
+			margin: 1rem 0 0.5em;
+			line-height: 1.1;
 
 			&:after {
 				margin-left: 0;
+				margin-top: 0.35em;
 			}
+		}
+
+		// Explicit hierarchy inside reference pages:
+		// pageTitle (2.5em) > section (h2, 1.5em) > sub (h3, 1.2em)
+		h2, .h2 {
+			font-size: 1.5em;
+			line-height: 1.25;
+			margin-top: 2rem;
+			margin-bottom: 0.25rem;
+		}
+
+		h3, .h3 {
+			font-size: 1.2em;
+			line-height: 1.3;
+			margin-top: 1.5rem;
+			margin-bottom: 0.25rem;
 		}
 
 		.timeline {
 			margin-left: 0;
+
+			h2, h3 {
+				margin-top: 0;
+			}
 		}
 	}
 
